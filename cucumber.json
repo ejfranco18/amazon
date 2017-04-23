@@ -1,0 +1,104 @@
+[
+  {
+    "uri": "features/amazon.feature",
+    "id": "buy-an-item",
+    "keyword": "Feature",
+    "name": "Buy an item",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "buy-an-item;search-for-an-item",
+        "keyword": "Scenario",
+        "name": "Search for an item",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5514830190
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Amazon site",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/amazon.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7349833503
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Xbox\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/amazon.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6435247145
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Select an item from the results",
+            "line": 12,
+            "output": [
+              "XIBERIA 3.5mm Surround Sound Gaming Headset Noise Isolation Wired Over ear Stereo Headphones with Microphone and Volume…"
+            ],
+            "match": {
+              "location": "features/step_definitions/amazon.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2945768248
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be on the information page of the selected item",
+            "line": 13,
+            "output": [
+              "XIBERIA 3.5mm Surround Sound Gaming Headset Noise Isolation Wired Over ear Stereo Headphones with Microphone and Volume Control for PC / MAC/ LAPTOP / Xbox One / PS4 - V10D (Gray / Black)"
+            ],
+            "match": {
+              "location": "features/step_definitions/amazon.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7790576652
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1533667781
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
